@@ -72,7 +72,8 @@ la-temperature-collection/
 6. Use Grafana to visualize the data.
 
 ## 8. Visualization
-https://gracepham.grafana.net/dashboard/snapshot/VlwbInknpZ607kGSxUdlEG63XnalIPgY
+<img width="1839" alt="visualization" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/3dca59fe-5dad-4aab-9d0d-7696350a5792">
+
 
 ## 9. Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
