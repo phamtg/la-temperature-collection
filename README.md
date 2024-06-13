@@ -14,8 +14,8 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 8. [Contributing](#contributing)
 
 ## 1. Prerequisite
-a. AWS account
-b. Grafana Lab
+a. [AWS account]
+b. [Grafana Lab]
 
 
 ## 2. Architecture
@@ -59,6 +59,6 @@ b. Grafana Lab
 <img width="1839" alt="visualization" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/3dca59fe-5dad-4aab-9d0d-7696350a5792">
 
 ## 8. Acknowledgements
-Special thanks to @dkfreitag for his course on Maven: Build Your First Serverless Data Engineering Project Course (https://maven.com/david-freitag/first-serverless-de-project)
-Data source: Weather Data Open Meteo API (https://api.open-meteo.com//)
+[Special thanks to @dkfreitag for his course on Maven: Build Your First Serverless Data Engineering Project Course] (https://maven.com/david-freitag/first-serverless-de-project)
+[Data source: Weather Data Open Meteo API] (https://api.open-meteo.com//)
 
