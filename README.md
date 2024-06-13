@@ -15,9 +15,11 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 
 ## 1. Installation
 To set up the project locally, ensure you have the necessary AWS CLI and SDKs installed. Clone the repository and install required dependencies.
-git clone https://github.com/yourusername/weather-data-collection.git
-cd weather-data-collection
+```bash
+git clone https://github.com/phamtg/la-temperature-collection.git
+cd la-temperature-collection
 pip install -r requirements.txt
+```
 
 ## 2. Architecture
 ![LA_Temperature_de_project](https://github.com/phamtg/la-temperature-collection/assets/148672438/f56beba6-2ec6-41d6-97a6-c677b3979f0f)
