@@ -74,15 +74,19 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 
 
 ## 8. Troubleshooting
+
 - **Lambda Function Errors:**
   - Check CloudWatch logs for detailed error messages.
   - Verify the IAM role has the necessary permissions.
+
 - **Kinesis Data Firehose Issues:**
   - Ensure the Firehose stream is properly configured with the correct S3 bucket.
-  - Check Firehose monitoring metrics for delivery failures.=
+  - Check Firehose monitoring metrics for delivery failures.
+
 - **Glue Job Failures:**
   - Review Glue job logs for errors.
-  - Ensure the Glue job script paths and S3 bucket permissions are correct.=
+  - Ensure the Glue job script paths and S3 bucket permissions are correct.
+
 - **Athena Query Problems:**
   - Verify the Glue Data Catalog table is correctly configured.
   - Check for syntax errors in your SQL queries.
