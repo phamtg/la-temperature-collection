@@ -28,7 +28,15 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 5. **Data Querying**: The transformed data is available for querying in AWS Athena.
 6. **Data Visualization**: Grafana is used to build a dashboard for visualizing the data.
 
-## 4. Setup
+## 4. AWS Services Used
+- **AWS Lambda**: To run the function that ingests data from the Open-Meteo API.
+- **AWS Kinesis Data Firehose**: To deliver the ingested data to S3.
+- **AWS S3**: To store raw and transformed data.
+- **AWS Glue**: To crawl, transform, and clean the data.
+- **AWS Athena**: To query the transformed data.
+- **Grafana**: To visualize the data.
+  
+## 5. Setup
 1. **AWS Lambda**: Deploy the `LA_weather_lambda_put_record_batch.py` Lambda function in the `lambda/` directory using the AWS Lambda Console or CLI.
 2. **AWS Kinesis Data Firehose**: Create a Kinesis Data Firehose delivery stream to deliver data to your S3 bucket.
 3. **AWS Glue**:
@@ -37,21 +45,18 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 4. **AWS Athena**: Configure Athena to query the data stored in your S3 bucket.
 5. **Grafana**: Set up Grafana to visualize the data.
 
-## 5. AWS Services Used
-- **AWS Lambda**: To run the function that ingests data from the Open-Meteo API.
-- **AWS Kinesis Data Firehose**: To deliver the ingested data to S3.
-- **AWS S3**: To store raw and transformed data.
-- **AWS Glue**: To crawl, transform, and clean the data.
-- **AWS Athena**: To query the transformed data.
-- **Grafana**: To visualize the data.
-
-## 6. Steps
+## 6. Pipeline
 1. Trigger the Lambda function to start data ingestion.
 2. Verify that the data is being delivered to your S3 bucket via Kinesis Data Firehose.
 3. Run the Glue crawler to update the Glue Data Catalog.
 4. Execute Glue jobs to transform and clean the data.
+<img width="1500" alt="glue_orchestration" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/6cc96f75-192c-40b3-a6fe-666dc7cb40cc">
 5. Query the transformed data in Athena to verify the data quality and structure.
-6. Use Grafana to visualize the data.
+<img width="585" alt="query" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/94fce06b-f974-4f7b-9544-222dd07c2cbf">
+<img width="1367" alt="result" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/2583bd02-c91e-408f-86fa-5e118c3baa44">
+6. Grafana to visualize the data.
+<img width="614" alt="grafana query" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/08c4afe8-eebf-4b69-8a0e-4409842e6f24">
+
 
 ## 7. Visualization
 <img width="1839" alt="visualization" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/0874c40b-5d6d-4b4d-a455-3abd5807302f">
