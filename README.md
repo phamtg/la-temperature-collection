@@ -54,9 +54,8 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 5. Query the transformed data in Athena to verify the data quality and structure.
 - <img width="585" alt="query" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/94fce06b-f974-4f7b-9544-222dd07c2cbf">
 - <img width="1367" alt="result" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/2583bd02-c91e-408f-86fa-5e118c3baa44">
-6. Grafana to visualize the data.
+6. Use Grafana to visualize the data.
 - <img width="614" alt="grafana query" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/08c4afe8-eebf-4b69-8a0e-4409842e6f24">
-
 
 ## 7. Visualization
 <img width="1839" alt="visualization" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/0874c40b-5d6d-4b4d-a455-3abd5807302f">
