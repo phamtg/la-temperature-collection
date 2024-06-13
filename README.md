@@ -29,7 +29,7 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 6. **Data Visualization**: Grafana is used to build a dashboard for visualizing the data.
 
 ## 4. Setup
-1. **AWS Lambda**: Deploy the `[ingest_lambda.py](https://github.com/phamtg/la-temperature-collection/blob/main/lambda/LA_weather_lambda_put_record_batch.py)` Lambda function using the AWS Lambda Console or CLI.
+1. **AWS Lambda**: Deploy the `LA_weather_lambda_put_record_batch.py` Lambda function in the `lambda/` directory using the AWS Lambda Console or CLI.
 2. **AWS Kinesis Data Firehose**: Create a Kinesis Data Firehose delivery stream to deliver data to your S3 bucket.
 3. **AWS Glue**:
    - Create a Glue Crawler to crawl the data in your S3 bucket and create a Glue Data Catalog table.
