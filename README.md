@@ -54,7 +54,7 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 6. Use Grafana to visualize the data.
 
 ## 7. Visualization
-<img width="1839" alt="visualization" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/3dca59fe-5dad-4aab-9d0d-7696350a5792">
+<img width="1839" alt="visualization" src="[https://github.com/phamtg/la-temperature-collection/assets/148672438/3dca59fe-5dad-4aab-9d0d-7696350a5792](https://github.com/phamtg/la-temperature-collection/blob/main/LA_Temperature_de_project.png)">
 
 ## 8. Acknowledgements
 Special thanks to:
