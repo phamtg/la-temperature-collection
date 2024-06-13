@@ -14,8 +14,8 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 8. [Acknowledgements](#acknowledgements)
 
 ## 1. Prerequisites
-- AWS account
-- Grafana Lab account
+- AWS account: [Sign up for AWS](https://aws.amazon.com/)
+- Grafana Lab account: [Sign up for Grafana](https://grafana.com/)
 
 ## 2. Architecture
 ![LA_Temperature_de_project](https://github.com/phamtg/la-temperature-collection/assets/148672438/2e4d54a7-3db4-4929-8359-8888c64a0b07)
@@ -39,6 +39,10 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 ## 5. Setup
 1. **AWS Lambda**: Deploy the `LA_weather_lambda_put_record_batch.py` Lambda function in the `lambda/` directory using the AWS Lambda Console or CLI.
 2. **AWS Kinesis Data Firehose**: Create a Kinesis Data Firehose delivery stream to deliver data to your S3 bucket.
+- Example configuration:
+  . Source: Direct PUT or other sources
+. Destination: S3 bucket
+. S3 bucket ARN: arn:aws:s3:::your-bucket-name
 3. **AWS Glue**:
    - Create a Glue Crawler to crawl the data in your S3 bucket and create a Glue Data Catalog table.
    - Create and run Glue jobs using the scripts in the `glue/` directory to transform data and perform data quality checks.
@@ -60,7 +64,29 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 ## 7. Visualization
 <img width="1839" alt="visualization" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/0874c40b-5d6d-4b4d-a455-3abd5807302f">
 
-## 8. Acknowledgements
+#### Troubleshooting
+
+```markdown
+## 8. Troubleshooting
+
+- **Lambda Function Errors:**
+  - Check CloudWatch logs for detailed error messages.
+  - Verify the IAM role has the necessary permissions.
+
+- **Kinesis Data Firehose Issues:**
+  - Ensure the Firehose stream is properly configured with the correct S3 bucket.
+  - Check Firehose monitoring metrics for delivery failures.
+
+- **Glue Job Failures:**
+  - Review Glue job logs for errors.
+  - Ensure the Glue job script paths and S3 bucket permissions are correct.
+
+- **Athena Query Problems:**
+  - Verify the Glue Data Catalog table is correctly configured.
+  - Check for syntax errors in your SQL queries.
+
+
+## 9. Acknowledgements
 Special thanks to:
 - [David Freitag](https://github.com/dkfreitag) for his course on [Maven: Build Your First Serverless Data Engineering Project](https://maven.com/david-freitag/first-serverless-de-project)
 
