@@ -93,8 +93,6 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 
 
 ## 9. Acknowledgements
-Special thanks to:
-- [David Freitag](https://github.com/dkfreitag) for his course on [Maven: Build Your First Serverless Data Engineering Project](https://maven.com/david-freitag/first-serverless-de-project)
+Special thanks to: [David Freitag](https://github.com/dkfreitag) for his course on [Maven: Build Your First Serverless Data Engineering Project](https://maven.com/david-freitag/first-serverless-de-project)
 
-Data source:
-- [Weather Data Open Meteo API](https://api.open-meteo.com/)
+Data source: [Weather Data Open Meteo API](https://api.open-meteo.com/)
