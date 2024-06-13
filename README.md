@@ -84,7 +84,7 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 - **Athena Query Problems:**
   - Verify the Glue Data Catalog table is correctly configured.
   - Check for syntax errors in your SQL queries.
-
+```
 
 ## 9. Acknowledgements
 Special thanks to:
