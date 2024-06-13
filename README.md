@@ -64,9 +64,6 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 ## 7. Visualization
 <img width="1839" alt="visualization" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/0874c40b-5d6d-4b4d-a455-3abd5807302f">
 
-#### Troubleshooting
-
-```markdown
 ## 8. Troubleshooting
 
 - **Lambda Function Errors:**
@@ -84,7 +81,6 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 - **Athena Query Problems:**
   - Verify the Glue Data Catalog table is correctly configured.
   - Check for syntax errors in your SQL queries.
-```
 
 ## 9. Acknowledgements
 Special thanks to:
