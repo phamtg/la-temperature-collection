@@ -50,12 +50,12 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 2. Verify that the data is being delivered to your S3 bucket via Kinesis Data Firehose.
 3. Run the Glue crawler to update the Glue Data Catalog.
 4. Execute Glue jobs to transform and clean the data.
-<img width="1500" alt="glue_orchestration" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/6cc96f75-192c-40b3-a6fe-666dc7cb40cc">
+- <img width="1500" alt="glue_orchestration" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/6cc96f75-192c-40b3-a6fe-666dc7cb40cc">
 5. Query the transformed data in Athena to verify the data quality and structure.
-<img width="585" alt="query" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/94fce06b-f974-4f7b-9544-222dd07c2cbf">
-<img width="1367" alt="result" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/2583bd02-c91e-408f-86fa-5e118c3baa44">
+- <img width="585" alt="query" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/94fce06b-f974-4f7b-9544-222dd07c2cbf">
+- <img width="1367" alt="result" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/2583bd02-c91e-408f-86fa-5e118c3baa44">
 6. Grafana to visualize the data.
-<img width="614" alt="grafana query" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/08c4afe8-eebf-4b69-8a0e-4409842e6f24">
+- <img width="614" alt="grafana query" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/08c4afe8-eebf-4b69-8a0e-4409842e6f24">
 
 
 ## 7. Visualization
