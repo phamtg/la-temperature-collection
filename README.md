@@ -36,16 +36,34 @@ la-temperature-collection/
 ├── README.md
 ├── requirements.txt
 
-Architecture
-The following diagram illustrates the architecture of the Los Angeles temperature data collection project:
 
+### 5. Project Structure
+Describe the structure of your project, including the main directories and files.
 
-Data Flow
-Data Ingestion: A Lambda function ingests daily temperature data for Los Angeles from the Open-Meteo API and sends it to a Kinesis Data Firehose stream.
-Data Storage: Kinesis Data Firehose delivers the data to an S3 bucket.
-Data Crawling: AWS Glue crawls the data in S3 to create a table in the AWS Glue Data Catalog.
-Data Transformation: AWS Glue jobs transform the data, perform data quality checks, and save the cleaned data as Parquet files in S3.
-Data Querying: The transformed data is available for querying in AWS Athena.
-Data Visualization: Grafana is used to build a dashboard for visualizing the data.
+```markdown
+## Project Structure
+la-temperature-collection/
+├── images/
+│   ├── architecture_diagram.png
+├── lambda/
+│   ├── ingest_lambda.py
+├── glue/
+│   ├── transform_glue_job.py
+│   ├── data_quality_check_glue_job.py
+├── terraform/
+│   ├── main.tf
+├── README.md
+├── requirements.txt
+
+### 6. Data Sources
+Explain the data sources used in the project, including any necessary credentials or setup steps.
+
+```markdown
+## Data Sources
+This project uses data from the following sources:
+1. [Source 1](http://example.com)
+2. [Source 2](http://example.com)
+
+Ensure you have the necessary API keys and credentials to access the data.
 
 
