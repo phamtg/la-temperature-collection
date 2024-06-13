@@ -4,22 +4,19 @@
 This project collects daily temperature data for Los Angeles from the Open-Meteo API for April through May 2024 and ingests it into an AWS data pipeline. The data is processed and stored in AWS S3, transformed and cleaned using AWS Glue, and made available for querying in AWS Athena. A Grafana dashboard is created to visualize the data, providing insights.
 
 ## Table of Contents
-1. [Installation](#installation)
+1. [Prerequisites](#prerequisites)
 2. [Architecture](#architecture)
 3. [Data Flow](#data-flow)
 4. [Setup](#setup)
 5. [AWS Services Used](#aws-services-used)
-6. [Usage](#usage)
+6. [Steps](#steps)
 7. [Visualization](#visualization)
 8. [Contributing](#contributing)
 
-## 1. Installation
-To set up the project locally, ensure you have the necessary AWS CLI and SDKs installed. Clone the repository and install required dependencies.
-```bash
-git clone https://github.com/phamtg/la-temperature-collection.git
-cd la-temperature-collection
-pip install -r requirements.txt
-```
+## 1. Prerequisite
+a. AWS account
+b. Grafana Lab
+
 
 ## 2. Architecture
 ![LA_Temperature_de_project](https://github.com/phamtg/la-temperature-collection/assets/148672438/f56beba6-2ec6-41d6-97a6-c677b3979f0f)
@@ -61,7 +58,7 @@ pip install -r requirements.txt
 ## 7. Visualization
 <img width="1839" alt="visualization" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/3dca59fe-5dad-4aab-9d0d-7696350a5792">
 
-## 8. Contributing
-Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
-
+## 8. Acknowledgements
+Special thanks to @dkfreitag for his course on Maven: Build Your First Serverless Data Engineering Project Course (https://maven.com/david-freitag/first-serverless-de-project)
+Data source: Weather Data Open Meteo API (https://api.open-meteo.com//)
 
