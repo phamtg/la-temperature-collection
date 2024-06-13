@@ -11,7 +11,7 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 5. [AWS Services Used](#aws-services-used)
 6. [Steps](#steps)
 7. [Visualization](#visualization)
-8. [Troubleshooting] (#troubleshooting)
+8. [Troubleshooting](#troubleshooting)
 9. [Acknowledgements](#acknowledgements)
 
 ## 1. Prerequisites
@@ -66,19 +66,15 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 <img width="1839" alt="visualization" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/0874c40b-5d6d-4b4d-a455-3abd5807302f">
 
 ## 8. Troubleshooting
-
 - **Lambda Function Errors:**
   - Check CloudWatch logs for detailed error messages.
   - Verify the IAM role has the necessary permissions.
-
 - **Kinesis Data Firehose Issues:**
   - Ensure the Firehose stream is properly configured with the correct S3 bucket.
-  - Check Firehose monitoring metrics for delivery failures.
-
+  - Check Firehose monitoring metrics for delivery failures.=
 - **Glue Job Failures:**
   - Review Glue job logs for errors.
-  - Ensure the Glue job script paths and S3 bucket permissions are correct.
-
+  - Ensure the Glue job script paths and S3 bucket permissions are correct.=
 - **Athena Query Problems:**
   - Verify the Glue Data Catalog table is correctly configured.
   - Check for syntax errors in your SQL queries.
