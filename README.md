@@ -14,12 +14,15 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 8. [Troubleshooting](#troubleshooting)
 9. [Acknowledgements](#acknowledgements)
 
+
 ## 1. Prerequisites
 - AWS account: [Sign up for AWS](https://aws.amazon.com/)
 - Grafana Lab account: [Sign up for Grafana](https://grafana.com/)
 
+
 ## 2. Architecture
 ![LA_Temperature_de_project](https://github.com/phamtg/la-temperature-collection/assets/148672438/2e4d54a7-3db4-4929-8359-8888c64a0b07)
+
 
 ## 3. Data Flow
 1. **Data Ingestion**: A Lambda function ingests weather data from the Open-Meteo API and sends it to a Kinesis Data Firehose stream.
@@ -29,6 +32,7 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 5. **Data Querying**: The transformed data is available for querying in AWS Athena.
 6. **Data Visualization**: Grafana is used to build a dashboard for visualizing the data.
 
+
 ## 4. AWS Services Used
 - **AWS Lambda**: To run the function that ingests data from the Open-Meteo API.
 - **AWS Kinesis Data Firehose**: To deliver the ingested data to S3.
@@ -36,6 +40,7 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 - **AWS Glue**: To crawl, transform, and clean the data.
 - **AWS Athena**: To query the transformed data.
 - **Grafana**: To visualize the data.
+
   
 ## 5. Setup
 1. **AWS Lambda**: Deploy the `LA_weather_lambda_put_record_batch.py` Lambda function in the `lambda/` directory using the AWS Lambda Console or CLI.
@@ -50,6 +55,7 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 4. **AWS Athena**: Configure Athena to query the data stored in your S3 bucket.
 5. **Grafana**: Set up Grafana to visualize the data.
 
+
 ## 6. Pipeline
 1. Trigger the Lambda function to start data ingestion.
 2. Verify that the data is being delivered to your S3 bucket via Kinesis Data Firehose.
@@ -62,8 +68,10 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 6. Use Grafana to visualize the data.
 - <img width="614" alt="grafana query" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/08c4afe8-eebf-4b69-8a0e-4409842e6f24">
 
+
 ## 7. Visualization
 <img width="1839" alt="visualization" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/0874c40b-5d6d-4b4d-a455-3abd5807302f">
+
 
 ## 8. Troubleshooting
 - **Lambda Function Errors:**
@@ -78,6 +86,7 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 - **Athena Query Problems:**
   - Verify the Glue Data Catalog table is correctly configured.
   - Check for syntax errors in your SQL queries.
+
 
 ## 9. Acknowledgements
 Special thanks to:
