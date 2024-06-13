@@ -18,8 +18,7 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 - Grafana Lab account
 
 ## 2. Architecture
-[![LA_Temperature_de_project]([https://github.com/phamtg/la-temperature-collection/assets/148672438/f56beba6-2ec6-41d6-97a6-c677b3979f0f](https://github.com/phamtg/la-temperature-collection/blob/main/LA_Temperature_de_project.png)
-](https://github.com/phamtg/la-temperature-collection/blob/main/LA_Temperature_de_project.png)
+![LA_Temperature_de_project](https://github.com/phamtg/la-temperature-collection/assets/148672438/2e4d54a7-3db4-4929-8359-8888c64a0b07)
 
 ## 3. Data Flow
 1. **Data Ingestion**: A Lambda function ingests weather data from the Open-Meteo API and sends it to a Kinesis Data Firehose stream.
@@ -55,7 +54,7 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 6. Use Grafana to visualize the data.
 
 ## 7. Visualization
-<img width="1839" alt="visualization" src="[[https://github.com/phamtg/la-temperature-collection/assets/148672438/3dca59fe-5dad-4aab-9d0d-7696350a5792](https://github.com/phamtg/la-temperature-collection/blob/main/visualization.png)](https://github.com/phamtg/la-temperature-collection/blob/main/LA_Temperature_de_project.png)">
+<img width="1839" alt="visualization" src="https://github.com/phamtg/la-temperature-collection/assets/148672438/0874c40b-5d6d-4b4d-a455-3abd5807302f">
 
 ## 8. Acknowledgements
 Special thanks to:
