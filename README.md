@@ -18,7 +18,8 @@ This project collects daily temperature data for Los Angeles from the Open-Meteo
 - Grafana Lab account
 
 ## 2. Architecture
-![LA_Temperature_de_project]([https://github.com/phamtg/la-temperature-collection/assets/148672438/f56beba6-2ec6-41d6-97a6-c677b3979f0f](https://github.com/phamtg/la-temperature-collection/blob/main/LA_Temperature_de_project.png)
+[![LA_Temperature_de_project]([https://github.com/phamtg/la-temperature-collection/assets/148672438/f56beba6-2ec6-41d6-97a6-c677b3979f0f](https://github.com/phamtg/la-temperature-collection/blob/main/LA_Temperature_de_project.png)
+](https://github.com/phamtg/la-temperature-collection/blob/main/LA_Temperature_de_project.png)
 
 ## 3. Data Flow
 1. **Data Ingestion**: A Lambda function ingests weather data from the Open-Meteo API and sends it to a Kinesis Data Firehose stream.
